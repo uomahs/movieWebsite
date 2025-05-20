@@ -8,7 +8,7 @@ import PopularPage from "./pages/PopularPage";
 import NowPlayingPage from "./pages/NowPlaying";
 import UpComingPage from "./pages/UpComing";
 import TopRatedPage from "./pages/TopRatedPage"
-import Search from "./pages/Search";
+import SearchPage from "./pages/Search";
 import moviehome from "./pages/moviehome";
 import DetailPage from "./components/DetailPage";
 const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
           <Route path="nowplaying" element={<NowPlayingPage />} />
           <Route path="toprated" element={<TopRatedPage />} />
           <Route path="upcoming" element={<UpComingPage />} />
-          <Route path="search" element={<Search/>}/>
+          <Route path="search" element={<SearchPage/>}/>
           <Route path="/movies/:movieId" element={<DetailPage />} />  {/* 상세 페이지 라우팅 */}
         </Route>
       </Routes>

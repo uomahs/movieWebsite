@@ -410,3 +410,39 @@ export const SubmitButton = styled.button`
   //props.disabled가 false면 -> 분홍색 (조건 만족)
 `;
 
+export const SearchButton= styled.div`
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  margin-top: -50px;
+  margin-left: 500px;
+  width: 900px;
+`
+
+export const PaginationWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 12px;
+  align-items: center;
+  margin-left: 250px;
+`;
+
+
+export const PageButton = styled.button`
+  margin-left: 20px;
+  margin-right: 20px;
+
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: ${({ disabled }) => (disabled ? "#ccc" : "pink")};
+  color: black;
+  font-weight: bold;
+  cursor: ${({ disabled }) => (disabled ? "default" : "pointer")};
+`;
+
+export const PageNumber = styled.span`
+  font-weight: bold;
+  font-size: 18px;
+`;
