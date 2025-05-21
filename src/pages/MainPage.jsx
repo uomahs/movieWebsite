@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import MovieList from "../pages/MovieList";
+import LoadingSpinner from "../components/LoadingSpinner"
 
 const Home = () => {
   const [movies, setMovies] = useState([]);

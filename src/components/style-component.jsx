@@ -446,3 +446,13 @@ export const PageNumber = styled.span`
   font-weight: bold;
   font-size: 18px;
 `;
+
+
+export const SearchResultStyle= styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: black;
+  margin-left: 250px;
+`

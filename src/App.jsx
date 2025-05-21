@@ -9,15 +9,17 @@ import NowPlayingPage from "./pages/NowPlaying";
 import UpComingPage from "./pages/UpComing";
 import TopRatedPage from "./pages/TopRatedPage"
 import SearchPage from "./pages/Search";
-import moviehome from "./pages/moviehome";
 import DetailPage from "./components/DetailPage";
+import SearchResultsPage from "./pages/SearchResultPage"
+import MovieHome from "./pages/moviehome";
+
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<RootLayout />}>{/*RootLayout으로 감싸 네비바, 사이드바가 항상 떠있도록*/}
           <Route path="/" element={<Home />} />
-          <Route path="movies" element={<moviehome />} />
+          <Route path="movies" element={<MovieHome />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="signup" element={<SignUpPage />} />
           <Route path="popular" element={<PopularPage />} />
@@ -25,6 +27,7 @@ const App = () => {
           <Route path="toprated" element={<TopRatedPage />} />
           <Route path="upcoming" element={<UpComingPage />} />
           <Route path="search" element={<SearchPage/>}/>
+          <Route path="/search/results" element={<SearchResultsPage />} />
           <Route path="/movies/:movieId" element={<DetailPage />} />  {/* 상세 페이지 라우팅 */}
         </Route>
       </Routes>
