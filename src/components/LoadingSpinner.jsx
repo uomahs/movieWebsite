@@ -10,7 +10,7 @@ const SpinnerWrapper = styled.div`
   width: 48px;
   height: 48px;
   border: 5px solid #eee;
-  border-top-color: #007bff;
+  border-top-color:rgb(255, 161, 217);
   border-radius: 50%;
   animation: ${spin} 1s linear infinite;
 `;
